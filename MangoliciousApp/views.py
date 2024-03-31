@@ -73,7 +73,13 @@ def payment(request):
     print(bb)
 
     tot = cp * bb
+
+    totalindb = Details.objects.latest('id')
+    totalindb.total_price = tot
+    totalindb.save()
     print(tot)
+
+
     return render(request,"payment.html",{'tot':tot,'vv':vv,'cp':cp,'bb':bb})
 
 def razorpaycheck(request):
