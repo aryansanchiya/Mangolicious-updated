@@ -70,16 +70,16 @@
             <div class="navbar-nav mx-auto bg-light pe-4 py-3 py-lg-0">
                 <a href="/" class="nav-item nav-link ">Home</a>
                 <!-- <a href="about" class="nav-item nav-link">About Us</a> -->
-                <a href="buynow" class="nav-item nav-link active">Buy Now</a>
+<!--                 <a href="buynow" class="nav-item nav-link active">Buy Now</a> -->
             </div>
             </div>
-            < <div class="h-100 d-lg-inline-flex align-items-center d-none">
+<!--             <div class="h-100 d-lg-inline-flex align-items-center d-none">
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-twitter"></i></a>
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
                 <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
             </div> 
-        </div>
+        </div> -->
         <div><a href="details" class="btn btn-primary py-3 px-5 animated slideInDown">Online Payment</a></div>
 	<br>
 	<div><a href="cod" class="btn btn-primary py-3 px-5 animated slideInDown">Cash On Delivery</a></div>
@@ -150,11 +150,6 @@
                     </div>
                     {% endfor %}
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="position-relative rounded overflow-hidden h-100" style="min-height: 400px;">
-                        <img class="position-absolute w-100 h-100" src="{% static 'theme/img/mango7.jpg' %}" alt="" style="object-fit: cover;">
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -171,6 +166,20 @@
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <h1 class="display-6 mb-5">Sweetness</h1>
             </div>
+<!-- 	    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="position-relative rounded overflow-hidden h-100" style="min-height: 400px;">
+                        <img class="position-absolute w-100 h-100" src="{% static 'theme/img/mango7.jpg' %}" alt="" style="object-fit: cover;">
+                    </div>
+                </div> -->
+		
+	   <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="{% static 'theme/img/mango7.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item">
@@ -217,6 +226,7 @@
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Get In Touch</h5>
                     <p><i class="fa fa-map-marker-alt me-3"></i>Mangolicious B11 - Marketing Yard Talala Gir - 362150</p>
+		     <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
                     <!-- <p><i class="fa fa-phone-alt me-3"></i></p>
                     <p><i class="fa fa-envelope me-3"></i>info@example.com</p> -->
                 </div>
@@ -236,7 +246,7 @@
                         <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                </div> -->
+                </div> 
             </div>
         </div>
         <div class="container-fluid copyright">
