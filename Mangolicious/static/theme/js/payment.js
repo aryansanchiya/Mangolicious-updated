@@ -6,7 +6,7 @@ $(document).ready(function () {
             url: "proceed-to-pay",
             success: function (response){
                 var options = {
-                    "key": "rzp_test_DuofX8F7J4lvMj", // Enter the Key ID generated from the Dashboard
+                    "key": "rzp_live_V3C6HzHMaz2RQp", // Enter the Key ID generated from the Dashboard
                     "amount": response.total_price * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
                     "currency": "INR",
                     "name": "Mangolicious", //your business name
