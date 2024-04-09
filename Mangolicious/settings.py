@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-+okv9910hu!jb_pra-ogp8y*kqivkowa8deg97u7%8u8vqwn39'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -119,11 +119,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 
-STATIC_URL = 'Mangolicious/static/'
+STATIC_URL = "/static/"
+
+STATIC_ROOT = '/home/ubuntu/Mangolicious-updated/Mangolicious/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'Mangolicious/static')
+	'/home/ubuntu/Mangolicious-updated/Mangolicious/static/'
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
