@@ -29,6 +29,27 @@
 
     <!-- Template Stylesheet -->
     <link href="{% static 'theme/css/style.css' %}" rel="stylesheet">
+    <!-- Whatsup Button -->
+    <style>
+        float{
+	        position:fixed;
+	        width:50px;
+	        height:48px;
+	        bottom:85px;
+	        right:30px;
+	        background-color:#25d366;
+	        color:#FFF;
+	        border-radius:50px;
+	        text-align:center;
+            font-size:20px;
+	        /* box-shadow: 2px 2px 3px #999; */
+            z-index:100;
+        }
+
+        .my-float{
+	        margin-top:16px;
+        }
+    </style>
 </head>
 
 <body>
@@ -348,7 +369,11 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+<!--     Whats up   -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.me/918160403379" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
