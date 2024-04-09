@@ -9,5 +9,6 @@ urlpatterns = {
     path("payment",views.payment,name='payment'),
     path("coddetails",views.coddetails,name='coddetails'),
     path('proceed-to-pay',views.razorpaycheck,name="proceed-to-pay"),
+    path('message',views.message,name="message"),
     # path('')
 }

@@ -29,6 +29,7 @@ urlpatterns = [
     path("cod",views.cod,name='cod'),
     path("coddetails",views.coddetails,name='coddetails'),
     path('proceed-to-pay',views.razorpaycheck,name="proceed-to-pay"),
+    path('message',views.message,name="message"),
 ]
 admin.site.site_header  =  "Mangolicious"
 admin.site.site_title  =  " admin site"

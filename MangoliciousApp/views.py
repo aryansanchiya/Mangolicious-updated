@@ -102,3 +102,6 @@ def razorpaycheck(request):
 def paymen2(request):
 
     return render(request,"paymen2.html")
+
+def message(request):
+    return render(request,"message.html")
