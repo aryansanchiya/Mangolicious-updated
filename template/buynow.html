@@ -30,6 +30,27 @@
 
     <!-- Template Stylesheet -->
     <link href="{% static 'theme/css/style.css' %}" rel="stylesheet">
+	<!-- Whats upp -->
+    <style>
+        .float{
+	position:fixed;
+	width:50px;
+	height:48px;
+	bottom:85px;
+	right:30px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:20px;
+	/* box-shadow: 2px 2px 3px #999; */
+    z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+    </style>
 </head>
 
 <body>
@@ -217,7 +238,7 @@
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Get In Touch</h5>
                     <p><i class="fa fa-map-marker-alt me-3"></i>Mangolicious B11 - Marketing Yard Talala Gir - 362150</p>
-		     <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+		     <a class="btn btn-square rounded-circle bg-light text-primary me-0" href="https://www.instagram.com/___mangolicious___?igsh=MTIweno4YWlsOTZsaw=="><i class="fab fa-instagram"></i></a>
                     <!-- <p><i class="fa fa-phone-alt me-3"></i></p>
                     <p><i class="fa fa-envelope me-3"></i>info@example.com</p> -->
                 </div>
@@ -259,7 +280,10 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.me/918160403379" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
