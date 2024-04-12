@@ -30,27 +30,6 @@
 
     <!-- Template Stylesheet -->
     <link href="{% static 'theme/css/style.css' %}" rel="stylesheet">
-	<!-- Whats upp -->
-    <style>
-        .float{
-	position:fixed;
-	width:50px;
-	height:48px;
-	bottom:85px;
-	right:30px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-    font-size:20px;
-	/* box-shadow: 2px 2px 3px #999; */
-    z-index:100;
-}
-
-.my-float{
-	margin-top:16px;
-}
-    </style>
 </head>
 
 <body>
@@ -91,24 +70,19 @@
             <div class="navbar-nav mx-auto bg-light pe-4 py-3 py-lg-0">
                 <a href="/" class="nav-item nav-link ">Home</a>
                 <!-- <a href="about" class="nav-item nav-link">About Us</a> -->
-<<<<<<< HEAD
-                <a href="buynow" class="nav-item nav-link active">Raw Mangoes (कच्चे आम)</a>
-                <a href="ripemangoes" class="nav-item nav-link">Ripe Mangoes (पके आम)</a>
-=======
-<!--                 <a href="buynow" class="nav-item nav-link active">Buy Now</a> -->
->>>>>>> origin/master
+                <a href="buynow" class="nav-item nav-link">Raw Mangoes (कच्चे आम)</a>
+                <a href="ripemangoes" class="nav-item nav-link active">Ripe Mangoes (पके आम)</a>
             </div>
             </div>
-<!--             <div class="h-100 d-lg-inline-flex align-items-center d-none">
+            <!-- <div class="h-100 d-lg-inline-flex align-items-center d-none">
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-twitter"></i></a>
                 <a class="btn btn-square rounded-circle bg-light text-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
                 <a class="btn btn-square rounded-circle bg-light text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
-            </div> 
-        </div> -->
+            </div> -->
+        </div>
         <div><a href="details" class="btn btn-primary py-3 px-5 animated slideInDown">Online Payment</a></div>
-	<br>
-	<div><a href="cod" class="btn btn-primary py-3 px-5 animated slideInDown">Cash On Delivery</a></div>
+        <div><a href="cod" class="btn btn-primary py-3 px-5 animated slideInDown">Cash On Delivery</a></div>
     </nav>
     <!-- Navbar End -->
 
@@ -118,15 +92,16 @@
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="{% static 'theme/img/mango4.jpg' %}" alt="Image">
+                    <img class="w-100" src="{% static 'theme/img/mango.jpg' %}" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
                                     <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-4 animated slideInDown">Raw Mangoes (कच्चे आम)</h1>
-                                    <p class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown">1.Rich in Vitamin C</p>
-                                    <p class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown">2.Supports Skin Health</p>    
-                                    <p class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown">3.Antioxidant Powerhouse</p>    
+                                    <h1 class="display-4 text-white mb-4 animated slideInDown">Ripe Mangoes (पके आम)</h1>
+                                    <p class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown">1.Improve Gut Health</p> 
+                                    <p class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown">2.Support healthy weight goals</p>
+                                    <p class="fs-5 text-body mb-4 pb-2 mx-sm-5 animated slideInDown">3.Help lower cholesterol & Control your blood pressure.</p>       
+                                    
                                 </div>
                             </div>
                         </div>
@@ -178,6 +153,11 @@
                     </div>
                     {% endfor %}
                 </div>
+                <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="position-relative rounded overflow-hidden h-100" style="min-height: 400px;">
+                        <img class="position-absolute w-100 h-100" src="{% static 'theme/img/ripemango-1.jpg' %}" alt="" style="object-fit: cover;">
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -195,36 +175,31 @@
                 <h1 class="display-6 mb-5">Sweetness</h1>
             </div>
             <div class="row g-4">
-<!-- 		<div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="position-relative rounded overflow-hidden h-100" style="min-height: 400px;">
-                        <img class="position-absolute w-100 h-100" src="{% static 'theme/img/mango7.jpg' %}" alt="" style="object-fit: cover;">
-                    </div>
-                </div> -->
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item">
                         <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="{% static 'theme/img/mnew6.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'theme/img/mnew2.jpg' %}" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="">
                         <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid" src="{% static 'theme/img/bmango2 (2).jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'theme/img/ripemango-2.jpg' %}" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="">
                         <div class="team-img position-relative overflow">
-                            <img class="img-fluid" src="{% static 'theme/img/bmango2 (1).jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'theme/img/ripemango-3.jpg' %}" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="">
                         <div class="team-img position-relative overflow">
-                            <img class="img-fluid" src="{% static 'theme/img/b.jpg' %}" alt="">
+                            <img class="img-fluid" src="{% static 'theme/img/ripemango-1.jpg' %}" alt="">
                         </div>
                     </div>
                 </div>
@@ -245,7 +220,6 @@
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Get In Touch</h5>
                     <p><i class="fa fa-map-marker-alt me-3"></i>Mangolicious B11 - Marketing Yard Talala Gir - 362150</p>
-		     <a class="btn btn-square rounded-circle bg-light text-primary me-0" href="https://www.instagram.com/___mangolicious___?igsh=MTIweno4YWlsOTZsaw=="><i class="fab fa-instagram"></i></a>
                     <!-- <p><i class="fa fa-phone-alt me-3"></i></p>
                     <p><i class="fa fa-envelope me-3"></i>info@example.com</p> -->
                 </div>
@@ -256,7 +230,7 @@
                     <a class="btn btn-link" href="">Contact Us</a>
                     <!-- <a class="btn btn-link" href="">Our Services</a> -->
                     <!-- <a class="btn btn-link" href="">Terms & Condition</a> -->
-                </div>
+                </div> -->
                 <!-- <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Follow Us</h5>
                     <div class="d-flex">
@@ -265,7 +239,7 @@
                         <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-square rounded-circle me-1" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                </div> 
+                </div> -->
             </div>
         </div>
         <div class="container-fluid copyright">
@@ -287,10 +261,7 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://wa.me/918160403379" class="float" target="_blank">
-    <i class="fa fa-whatsapp my-float"></i>
-    </a>
+
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

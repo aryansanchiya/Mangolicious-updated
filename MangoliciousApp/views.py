@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
-from .models import BuyNow
+from .models import BuyNow, RipeMangoes
 from .models import Details
 from .models import Cod
 from django.shortcuts import redirect
@@ -13,10 +13,15 @@ def index(request):
 def about(request):
     return render(request, "aboutus.html")
 
-def buynow(request):
+def rawmangoes(request):
     buy = BuyNow.objects.all()
     print(buy)
     return render(request, "buynow.html", {'buy':buy})
+
+def ripemangoes(request):
+    buy = RipeMangoes.objects.all()
+    print(buy)
+    return render(request, "ripe-mangoes.html", {'buy':buy})
 
 def cod(request):
     if request.method == "POST":
@@ -26,8 +31,9 @@ def cod(request):
         quantt = request.POST['quantity']
         Choice = request.POST['choices']
         city = request.POST['city']
+        typeofmangoes = request.POST['typeofmangoes']
         add = request.POST['address']
-        new_data = Cod(name=username, email = mail, Mo_No = Mo_no, quant = quantt,Choice= Choice, city=city, address = add)
+        new_data = Cod(name=username, email = mail, Mo_No = Mo_no, quant = quantt,Choice= Choice, city=city,typeofmangoes=typeofmangoes, address = add)
         new_data.save()
         return redirect(coddetails)
     return render(request,'cod.html')
@@ -40,8 +46,9 @@ def details(request):
         quantt = request.POST['quantity']
         Choice = request.POST['choices']
         city = request.POST['city']
+        typeofmangoes = request.POST['typeofmangoes']
         add = request.POST['address']
-        new_data = Details(name=username, email = mail, Mo_No = Mo_no, quant = quantt,Choice= Choice, city=city, address = add)
+        new_data = Details(name=username, email = mail, Mo_No = Mo_no, quant = quantt,Choice= Choice, city=city,typeofmangoes=typeofmangoes, address = add)
         new_data.save()
         return redirect(payment)
     return render(request, "details.html")
