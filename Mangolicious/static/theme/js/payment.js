@@ -10,7 +10,7 @@ $(document).ready(function () {
                     "amount": response.total_price * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
                     "currency": "INR",
                     "name": "Mangolicious", //your business name
-                    "description": "Test Transaction",
+                    "description": "Mangolicious",
                     "image": "https://example.com/your_logo",
                     // "order_id": "order_9A33XWu170gUtm", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
                     "handler": function (response){
