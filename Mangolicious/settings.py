@@ -121,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 
-STATIC_ROOT = '/home/ubuntu/Mangolicious-updated/Mangolicious/static/'
+#STATIC_ROOT = '/home/ubuntu/Mangolicious-updated/Mangolicious/static/'
 STATICFILES_DIRS = [
 	'/home/ubuntu/Mangolicious-updated/Mangolicious/static/'
 ]
