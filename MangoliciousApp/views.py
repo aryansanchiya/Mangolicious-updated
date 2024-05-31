@@ -1,10 +1,23 @@
 from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
+from django.http import HttpResponse, JsonResponse, FileResponse, Http404
 from .models import BuyNow, RipeMangoes
 from .models import Details
 from .models import Cod
 from django.shortcuts import redirect
+import os
+from django.conf import settings
+
+
+def download_brochure(request):
+    file_path = os.path.join(settings.MEDIA_ROOT, 'mangoliciousbroucher.pdf')
+    if os.path.exists(file_path):
+        return FileResponse(open(file_path,'rb'), content_type = "application/pdf")
+    else:
+        return Http404("File Not Found")
+
+
 # Create your views here.
+
 def index(request):
     cc = Details.objects.count()
     print(cc)
@@ -112,3 +125,4 @@ def paymen2(request):
 
 def message(request):
     return render(request,"message.html")
+
